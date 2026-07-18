@@ -32,6 +32,14 @@ export const CATEGORIES: { value: Category; label: string; emoji: string }[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
+    id: 0,
+    src: '/gallery/anime_pool_selfie.png',
+    title: 'Poolside Legends',
+    category: 'anime',
+    price: '$25',
+    description: 'Awesome anime style portrait of two friends at a swimming pool enjoying the summer vibes.',
+  },
+  {
     id: 1,
     src: '/gallery/nature1.png',
     title: 'Enchanted Forest',
