@@ -40,6 +40,47 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Awesome anime style portrait of two friends at a swimming pool enjoying the summer vibes.',
   },
   {
+    id: 0.5,
+    src: '/gallery/river_peace_art.png',
+    title: 'River Peace',
+    category: 'anime',
+    price: '$20',
+    description: 'Beautiful hand-drawn artistic illustration of a young man swimming in a natural rocky river.',
+  },
+  // ─── Morocco & Meknes ──────────────────────────────
+  {
+    id: 0.6,
+    src: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&q=80',
+    title: 'Moroccan Architecture',
+    category: 'architecture',
+    price: '$15',
+    description: 'Stunning intricate Moroccan architecture and zellige tiles',
+  },
+  {
+    id: 0.7,
+    src: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80',
+    title: 'Sahara Magic',
+    category: 'nature',
+    price: '$25',
+    description: 'Golden sand dunes of the Moroccan Sahara desert at sunset',
+  },
+  {
+    id: 0.8,
+    src: 'https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?w=800&q=80',
+    title: 'Meknes Imperial',
+    category: 'architecture',
+    price: '$18',
+    description: 'Beautiful imperial city of Meknes with its historic monuments and walls',
+  },
+  {
+    id: 0.9,
+    src: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&q=80',
+    title: 'Blue Medina',
+    category: 'architecture',
+    price: '$22',
+    description: 'The famous blue city streets of Chefchaouen, Morocco',
+  },
+  {
     id: 1,
     src: '/gallery/nature1.png',
     title: 'Enchanted Forest',
@@ -55,22 +96,8 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     price: '$18',
     description: 'Stunning Northern Lights over Iceland',
   },
-  {
-    id: 3,
-    src: '/gallery/car1.png',
-    title: 'Neon Velocity',
-    category: 'cars',
-    price: '$15',
-    description: 'McLaren on wet city roads at night',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
-    title: 'Phantom Red',
-    category: 'cars',
-    price: '$20',
-    description: 'Luxury sports car in dramatic light',
-  },
+  
+  
   {
     id: 5,
     src: '/gallery/anime1.png',
@@ -87,22 +114,8 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     price: '$12',
     description: 'Vibrant digital art in cosmic style',
   },
-  {
-    id: 7,
-    src: '/gallery/portrait1.png',
-    title: 'Mystique',
-    category: 'portrait',
-    price: '$25',
-    description: 'Dramatic Rembrandt-lit fashion portrait',
-  },
-  {
-    id: 8,
-    src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80',
-    title: 'Golden Hour',
-    category: 'portrait',
-    price: '$22',
-    description: 'Warm outdoor cinematic portrait',
-  },
+  
+  
   {
     id: 9,
     src: 'https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=800&q=80',
@@ -290,46 +303,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   
   // Cars
-  {
-    id: 31,
-    src: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&q=80',
-    title: 'Night Runner',
-    category: 'cars',
-    price: '$22',
-    description: 'Sleek sports car driving through neon-lit cyberpunk streets',
-  },
-  {
-    id: 32,
-    src: 'https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=800&q=80',
-    title: 'Desert Drifter',
-    category: 'cars',
-    price: '$18',
-    description: 'Classic muscle car kicking up dust in a golden desert',
-  },
-  {
-    id: 33,
-    src: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80',
-    title: 'Red Velocity',
-    category: 'cars',
-    price: '$25',
-    description: 'Italian supercar parked perfectly in front of a modern mansion',
-  },
-  {
-    id: 34,
-    src: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80',
-    title: 'Urban Beast',
-    category: 'cars',
-    price: '$21',
-    description: 'Aggressive luxury car reflecting city lights in the rain',
-  },
-  {
-    id: 35,
-    src: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80',
-    title: 'Vintage Elegance',
-    category: 'cars',
-    price: '$19',
-    description: 'Immaculately restored classic car from the 1960s',
-  },
+  
+  
+  
+  
+  
 
   // Architecture
   {
@@ -400,38 +378,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
 
   // Portrait
-  {
-    id: 44,
-    src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80',
-    title: 'Neon Gaze',
-    category: 'portrait',
-    price: '$19',
-    description: 'Striking portrait illuminated by pink and blue neon lights',
-  },
-  {
-    id: 45,
-    src: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80',
-    title: 'Shadows & Light',
-    category: 'portrait',
-    price: '$17',
-    description: 'Dramatic black and white male portrait with strong contrast',
-  },
-  {
-    id: 46,
-    src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80',
-    title: 'Golden Hour Smile',
-    category: 'portrait',
-    price: '$18',
-    description: 'Warm natural portrait at sunset with glowing hair',
-  },
-  {
-    id: 47,
-    src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
-    title: 'Intense Focus',
-    category: 'portrait',
-    price: '$16',
-    description: 'Cinematic portrait of a man looking directly into the lens',
-  },
+  
+  
+  
+  
 
   // Wallpaper
   {
