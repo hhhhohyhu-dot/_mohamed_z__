@@ -182,6 +182,117 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── About Me ─────────────────────────────────── */}
+      <section id="about" className="relative py-24 md:py-32 overflow-hidden">
+        {/* Background Image of Meknes with parallax effect */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('/meknes-bg.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            opacity: 0.35
+          }}
+        />
+        {/* Gradients to blend smoothly with the background */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            background: 'linear-gradient(to bottom, var(--background) 0%, transparent 15%, transparent 85%, var(--background) 100%)'
+          }}
+        />
+        <div 
+          className="absolute inset-0 z-0 backdrop-blur-[4px]"
+          style={{
+            background: 'linear-gradient(90deg, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.9) 100%)'
+          }}
+        />
+
+        <div className="container relative z-10 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 30 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+            className="w-full max-w-4xl p-8 md:p-14 rounded-3xl relative overflow-hidden"
+            style={{
+              background: 'rgba(15, 15, 15, 0.65)',
+              backdropFilter: 'blur(20px)',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(124, 58, 237, 0.2)',
+            }}
+          >
+            {/* Colorful Orbs inside the card for that premium glow */}
+            <div className="absolute -top-32 -right-32 w-64 h-64 bg-violet-600 rounded-full blur-[100px] opacity-60" />
+            <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-fuchsia-600 rounded-full blur-[100px] opacity-60" />
+
+            <div className="relative z-10 text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border"
+                  style={{
+                    background: 'rgba(217, 70, 239, 0.1)',
+                    borderColor: 'rgba(217, 70, 239, 0.3)',
+                    color: 'var(--fuchsia)',
+                  }}
+                >
+                  <Sparkles className="w-3.5 h-3.5" />
+                  À Propos de Moi
+                </span>
+              </motion.div>
+              
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="text-5xl md:text-7xl font-black mb-6 grad-text"
+                style={{ fontFamily: 'Outfit, sans-serif' }}
+              >
+                Mohamed
+              </motion.h2>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+                className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mb-8 text-lg font-semibold"
+                style={{ color: 'var(--foreground)' }}
+              >
+                <div className="flex items-center gap-3 px-5 py-2.5 rounded-2xl" style={{ background: 'rgba(255,255,255,0.08)' }}>
+                  <div className="w-3 h-3 rounded-full bg-violet-500 shadow-[0_0_12px_rgba(124,58,237,0.9)] animate-pulse" />
+                  19 ans
+                </div>
+                <div className="flex items-center gap-3 px-5 py-2.5 rounded-2xl" style={{ background: 'rgba(255,255,255,0.08)' }}>
+                  <div className="w-3 h-3 rounded-full bg-fuchsia-500 shadow-[0_0_12px_rgba(217,70,239,0.9)] animate-pulse" style={{ animationDelay: '0.5s' }} />
+                  Meknès, Maroc
+                </div>
+              </motion.div>
+              
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 }}
+                className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto"
+                style={{ color: 'var(--muted)' }}
+              >
+                Je suis un créateur digital passionné par le design, la photographie et le développement web. 
+                Né et basé dans la magnifique ville impériale de Meknès, je m'inspire de la 
+                richesse de la culture marocaine et de l'architecture historique pour 
+                concevoir des expériences visuelles modernes et éclatantes. 
+              </motion.p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── Gallery ──────────────────────────────────── */}
       <section id="gallery" className="section">
         <div className="container">
