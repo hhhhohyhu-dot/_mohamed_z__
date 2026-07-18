@@ -94,25 +94,6 @@ export default function Home() {
 
         {/* Content */}
         <div className="container relative z-10 text-center pt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
-            className="flex justify-center mb-6"
-          >
-            <span
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold border"
-              style={{
-                background: 'rgba(124,58,237,0.1)',
-                borderColor: 'rgba(124,58,237,0.3)',
-                color: 'var(--violet-light)',
-              }}
-            >
-              <Sparkles className="w-4 h-4" />
-              Powered by Nano Banana AI
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,10 +101,6 @@ export default function Home() {
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none mb-6"
             style={{ fontFamily: 'Outfit, sans-serif' }}
           >
-            <span style={{ color: 'var(--foreground)' }}>Premium </span>
-            <span className="grad-text">AI Gallery</span>
-            <br />
-            <span style={{ color: 'var(--foreground)' }}>by </span>
             <span className="grad-text">mohamed_z_</span>
           </motion.h1>
 
@@ -134,7 +111,7 @@ export default function Home() {
             className="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
             style={{ color: 'var(--muted)' }}
           >
-            Discover stunning 4K AI-generated artwork — nature, cars, anime, portraits, fantasy and more.
+            Discover stunning 4K artwork — nature, cars, anime, portraits, fantasy and more.
             Download or purchase instantly.
           </motion.p>
 
@@ -157,7 +134,7 @@ export default function Home() {
               id="hero-services-btn"
               className="btn-ghost px-8 py-4 text-base font-bold flex items-center gap-2"
             >
-              AI Website Services
+              Website Services
               <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
             </a>
           </motion.div>
@@ -171,7 +148,7 @@ export default function Home() {
           >
             {[
               { value: '4K', label: 'Resolution' },
-              { value: `${GALLERY_ITEMS.length}+`, label: 'AI Artworks' },
+              { value: `${GALLERY_ITEMS.length}+`, label: 'Artworks' },
               { value: '8', label: 'Categories' },
             ].map(stat => (
               <div key={stat.label} className="text-center">
@@ -222,7 +199,7 @@ export default function Home() {
               The <span className="grad-text">Gallery</span>
             </h2>
             <p className="text-base max-w-xl mx-auto" style={{ color: 'var(--muted)' }}>
-              All images are AI-generated in 4K quality using Nano Banana AI technology.
+              All images are in 4K quality.
             </p>
           </motion.div>
 

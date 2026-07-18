@@ -36,7 +36,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-center md:text-left" style={{ color: 'var(--muted)' }}>
-              Premium AI photography &amp; professional website development.
+              Premium photography &amp; professional website development.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function Footer() {
             {[
               { href: '/', label: 'Home' },
               { href: '/#gallery', label: 'Gallery' },
-              { href: '/services', label: 'AI Website Services' },
+              { href: '/services', label: 'Website Services' },
               { href: '/#contact', label: 'Contact' },
             ].map((link) => (
               <Link
@@ -118,7 +118,7 @@ export default function Footer() {
           style={{ borderTop: '1px solid var(--border)', color: 'var(--muted-2)' }}
         >
           <p>© 2026 <span className="grad-text font-semibold">mohamed_z_</span>. All rights reserved.</p>
-          <p>Powered by <span style={{ color: 'var(--violet-light)' }}>Nano Banana AI</span></p>
+
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ import { useTheme } from './ThemeProvider';
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/#gallery', label: 'Gallery' },
-  { href: '/services', label: 'AI Website Services' },
+  { href: '/services', label: 'Website Services' },
   { href: '/#contact', label: 'Contact' },
 ];
 
